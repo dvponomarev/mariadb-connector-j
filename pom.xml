@@ -60,7 +60,7 @@
   <artifactId>mariadb-java-client</artifactId>
   <packaging>jar</packaging>
   <name>mariadb-java-client</name>
-  <version>2.6.0-autocommit-off</version>
+  <version>2.6.0-autocommitoff</version>
   <description>JDBC driver for MariaDB and MySQL - modification with autocommit off</description>
   <url>https://github.com/dvponomarev/mariadb-connector-j.git</url>
 

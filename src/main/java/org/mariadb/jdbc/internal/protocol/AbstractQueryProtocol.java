@@ -70,6 +70,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.locks.ReentrantLock;
+import org.mariadb.jdbc.AutocommitOff;
 import org.mariadb.jdbc.LocalInfileInterceptor;
 import org.mariadb.jdbc.MariaDbConnection;
 import org.mariadb.jdbc.MariaDbStatement;
@@ -1951,7 +1952,7 @@ public class AbstractQueryProtocol extends AbstractConnectProtocol implements Pr
       setCatalog(database);
     }
 
-    if (getAutocommit() != autocommit) {
+    if (getAutocommit() != autocommit && AutocommitOff.AUTOCOMMIT) {
       executeQuery("set autocommit=" + (autocommit ? "1" : "0"));
     }
   }

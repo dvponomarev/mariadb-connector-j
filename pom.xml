@@ -60,9 +60,9 @@
   <artifactId>mariadb-java-client</artifactId>
   <packaging>jar</packaging>
   <name>mariadb-java-client</name>
-  <version>2.6.0</version>
-  <description>JDBC driver for MariaDB and MySQL</description>
-  <url>https://mariadb.com/kb/en/mariadb/about-mariadb-connector-j/</url>
+  <version>2.6.0-autocommit-off</version>
+  <description>JDBC driver for MariaDB and MySQL - modification with autocommit off</description>
+  <url>https://github.com/dvponomarev/mariadb-connector-j.git</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
